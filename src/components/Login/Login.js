@@ -34,6 +34,8 @@ const Login = () => {
                     })
                 });
 
+                window.localStorage.setItem('USER_CORREO', response.profileObj.email);
+
                 const content = await user.json();
                 console.log(content);
                 if (content.role === 1){
@@ -46,7 +48,7 @@ const Login = () => {
                     loginDocente();
                     sleep(1000).then(() => { history.push(rutas.DOCENTE); });
                     return;
-                } else if (content.role === 2) {
+                } else if (content.role === 3) {
                     console.log("Admin conectado.");
                     loginAdmin();
                     sleep(1000).then(() => { history.push(rutas.ADMIN); });
