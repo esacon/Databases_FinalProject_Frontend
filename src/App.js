@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
+import { rutas} from './path';
+import ProtectedRoute from './components/Login/routes/ProtectedRoute';
+import PublicRoute from './components/Login/routes/PublicRoute';
+import Login from './components/Login/Login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <PublicRoute exact path={rutas.LOGIN} component={Login} />
+          <PublicRoute path="*" component={() => "404 NOT FOUND"} />
+        </Switch>
+      </Router>
     </div>
   );
 }
