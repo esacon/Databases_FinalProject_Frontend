@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const Estudiante = () => {
+const Docente = () => {
     return (
         <>
-            Soy Estudiante.
+            Soy Docente.
         </>
     );
 }
 
-export default Estudiante;
+export default Docente;

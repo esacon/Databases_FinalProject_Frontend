@@ -3,66 +3,101 @@ import { rutas } from "../../path";
 
 function Navbar(){
 
-  const {isAuthenticated, isAdminAuthenticated, logout} = useAuthContext();
+  const {isEstudianteAuthenticated, isAdminAuthenticated, isDocenteAuthenticated, logout} = useAuthContext();
 
   let tabs = null;
   let logoutButton = null;
+  let sideVar = null
 
-  const productosMenu = <> 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href={rutas.PRODUCTOS} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-              Productos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href={rutas.PRODUCTOS}>Productos</a>
-                <a class="dropdown-item" href={rutas.REG_PRODUCTO}>Registrar productos</a>
-                <a class="dropdown-item" href={rutas.MOD_PRODUCTO}>Modificar productos</a>
-              </div>
-            </li>  
+
+  const estudianteMenu = <> 
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opciones</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href={rutas.EST_ING}>Ingresar a clase</a>
+          </div>
+        </li>  
   </>
 
-  const ventasMenu = <> 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href={rutas.VENDEDOR} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-              Ventas
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href={rutas.VENDEDOR}>Ventas</a>
-                <a class="dropdown-item" href={rutas.REG_VENTA}>Registrar ventas</a>
-                <a class="dropdown-item" href={rutas.MOD_VENTA}>Modificar ventas</a>
-              </div>
-            </li>  
+  const docenteMenu = <> 
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opciones</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href={rutas.DOC_INI}>Iniciar la clase</a>
+          </div>
+        </li>  
   </>
 
-  if (isAdminAuthenticated && !isAuthenticated) {
+  if (isEstudianteAuthenticated) {
     tabs = <>
-            <a class="nav-item active nav-link" href="/admin">Usuarios</a>
-            { productosMenu }
-            { ventasMenu }
+            <a class="nav-item active nav-link" href={rutas.ESTUDIANTE}>Inicio</a>
+            { estudianteMenu }
           </>
+    sideVar = <>
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Estudiante</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.EST_MAT}>Matriculas</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.EST_CUR}>Cursos</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.EST_CAL}>Clases</a>
+        </div>
+    </div>
+    </>
     logoutButton = <button class="btn btn-outline-danger my-2 my-sm-0" onClick={logout}>Cerrar sesión</button>
-  } else if (isAuthenticated) {
+  } else if (isDocenteAuthenticated) {
     tabs = <>
-            { ventasMenu }
+            <a class="nav-item active nav-link" href={rutas.DOCENTE}>Inicio</a>
+            { docenteMenu }
           </>
+    sideVar = <>
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Docente</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.DOC_ASI}>Asignaturas</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.DOC_CUR}>Cursos</a>
+        </div>
+    </div>
+    </>
+    logoutButton = <button class="btn btn-outline-danger my-2 my-sm-0" onClick={logout}>Cerrar sesión</button>
+  } else if (isAdminAuthenticated) {
+    tabs = <>
+            <a class="nav-item active nav-link" href={rutas.ADMIN}>Inicio</a>
+          </>
+    sideVar = <>
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">ADMIN</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_ASI}>Crear asignatura</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_CUR}>Crear curso</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_DEP}>Crear departamento</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_EST}>Crear estudiante</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_MAT}>Crear matricula</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_PER}>Crear periodo</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_DOC}>Crear profesor</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_PRG}>Crear programa</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_SAL}>Crear salon</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href={rutas.ADM_PLN}>Crear plan de estudios</a>
+        </div>
+    </div>
+    </>
     logoutButton = <button class="btn btn-outline-danger my-2 my-sm-0" onClick={logout}>Cerrar sesión</button>
   }
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-      <a class="navbar-brand" href={rutas.LOGIN}>
-        <img  width="30" height="30" class="d-inline-block align-top" alt="" src="https://static.wixstatic.com/media/2cd43b_fd0aba46da664bba9992400e48d51338~mv2_d_3543_4502_s_4_2.png/v1/fill/w_320,h_406,q_90/2cd43b_fd0aba46da664bba9992400e48d51338~mv2_d_3543_4502_s_4_2.png"></img>
-        <span class="navbar-brand mb-0 h1">PUB Data System</span>
-      </a>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="navbar-nav">
-          <a class="nav-item active nav-link" href={rutas.LOGIN}>Principal</a>
-          { tabs } 
-        </div>        
-      </div>
-      { logoutButton }
+    <>
+      {sideVar}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    {tabs}
+                </ul>
+            </div>
+        </div>
+        {logoutButton}
     </nav>
+    </>
   );
 }
 

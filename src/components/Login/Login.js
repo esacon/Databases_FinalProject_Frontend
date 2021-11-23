@@ -14,7 +14,7 @@ function sleep(ms) {
 const Login = () => {
 
     const history = useHistory();
-    const {login, loginAdmin, logout} = useAuthContext();
+    const {loginEstudiante, loginDocente, loginAdmin, logout} = useAuthContext();
 
     const responseGoogle = async (response) => {
         console.log(response);
@@ -22,28 +22,32 @@ const Login = () => {
             try {
                 cookie.save('token', response.tokenId);
 
-                const user = await fetch('https://pub-ciclo3-server.herokuapp.com/api/addUser', {
+                // https://sabiduria-backend.herokuapp.com/
+                const user = await fetch('http://localhost:5000/server/conexiones/users', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        name: response.profileObj.name,
-                        lastname: response.profileObj.familyName,
-                        email: response.profileObj.email
+                        correo: response.profileObj.email
                     })
                 });
 
                 const content = await user.json();
                 console.log(content);
                 if (content.role === 1){
-                    console.log("Vendedor conectado.");
-                    login();
-                    sleep(1000).then(() => { history.push(rutas.VENDEDOR); });     
+                    console.log("Estudiante conectado.");
+                    loginEstudiante();
+                    sleep(1000).then(() => { history.push(rutas.ESTUDIANTE); });     
                     return;
                 } else if (content.role === 2) {
-                    console.log("Administrador conectado.");
+                    console.log("Docente conectado.");
+                    loginDocente();
+                    sleep(1000).then(() => { history.push(rutas.DOCENTE); });
+                    return;
+                } else if (content.role === 2) {
+                    console.log("Admin conectado.");
                     loginAdmin();
                     sleep(1000).then(() => { history.push(rutas.ADMIN); });
                     return;
@@ -70,7 +74,7 @@ const Login = () => {
                         <div className="loginBox">
                             <h4 class="mg-l">Inicie sesión: </h4>
                             <GoogleLogin
-                                clientId="819657394751-u81jl3tvgmpsa7jr2r8p9m68i78qkmpu.apps.googleusercontent.com"
+                                clientId="819657394751-i8a1qcf8tede4ipuddop6jvtuogs94vh.apps.googleusercontent.com"
                                 buttonText="Login"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
