@@ -1,0 +1,268 @@
+ .docclasesiniu-section-1 {
+  background-image: url("https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 50% 50%;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-sheet-1 {
+  min-height: 540px;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-group-1 {
+  min-height: 403px;
+  background-image: none;
+  width: 1053px;
+  margin: 47px auto 60px;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-container-layout-1 {
+  padding: 30px 45px;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-icon-1 {
+  width: 96px;
+  height: 96px;
+  background-image: none;
+  margin: 17px auto 0;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-text-1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  width: 440px;
+  margin: 47px auto 0;
+}
+
+.docclasesiniu-section-1 .docclasesiniu-text-2 {
+  margin: 30px 0 0;
+}
+
+@media (max-width: 1199px) {
+  .docclasesiniu-section-1 .docclasesiniu-sheet-1 {
+    min-height: 445px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-group-1 {
+    width: 940px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-container-layout-1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .docclasesiniu-section-1 .docclasesiniu-sheet-1 {
+    min-height: 623px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-group-1 {
+    width: 720px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-text-1 {
+    font-size: 3.4375rem;
+  }
+}
+
+@media (max-width: 767px) {
+   .docclasesiniu-section-1 {
+    background-position: 45% 39.89%;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-group-1 {
+    width: 540px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-icon-1 {
+    margin-top: 139px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-text-1 {
+    margin-top: -2px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+   .docclasesiniu-section-1 {
+    background-position: 61.4% 39.89%;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-sheet-1 {
+    min-height: 567px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-group-1 {
+    width: 340px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-icon-1 {
+    margin-top: 75px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-text-1 {
+    font-size: 2.25rem;
+    width: 320px;
+    margin-top: -6px;
+    margin-right: 0;
+    margin-left: 9px;
+  }
+
+  .docclasesiniu-section-1 .docclasesiniu-text-2 {
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+}.docclasesiniu-section-2 .docclasesiniu-sheet-1 {
+  min-height: 50vw;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-layout-wrap-1 {
+  margin-top: 76px;
+  margin-bottom: 60px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-layout-cell-1 {
+  min-height: 422px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-container-layout-1 {
+  padding: 0 30px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-icon-1 {
+  width: 86px;
+  height: 86px;
+  background-image: none;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-1 {
+  text-align: left;
+  margin: 9px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-2 {
+  text-align: left;
+  margin: 33px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-3 {
+  text-align: left;
+  width: 58px;
+  margin: 33px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-4 {
+  text-align: center;
+  width: 184px;
+  margin: 12px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  margin: 20px auto 0;
+  padding: 11px 49px 11px 48px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-layout-cell-2 {
+  min-height: 422px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-container-layout-2 {
+  padding: 8px 30px;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-icon-2 {
+  width: 86px;
+  height: 86px;
+  background-image: none;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-5 {
+  text-align: left;
+  margin: 9px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-6 {
+  text-align: left;
+  margin: 33px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-7 {
+  text-align: left;
+  width: 58px;
+  margin: 25px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-text-8 {
+  text-align: center;
+  width: 184px;
+  margin: 12px auto 0;
+}
+
+.docclasesiniu-section-2 .docclasesiniu-btn-2 {
+  border-style: solid;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  margin: 20px auto 0;
+  padding: 11px 49px 11px 48px;
+}
+
+@media (max-width: 1199px) {
+  .docclasesiniu-section-2 .docclasesiniu-layout-wrap-1 {
+    position: relative;
+  }
+
+  .docclasesiniu-section-2 .docclasesiniu-layout-cell-1 {
+    min-height: 348px;
+  }
+
+  .docclasesiniu-section-2 .docclasesiniu-layout-cell-2 {
+    min-height: 348px;
+  }
+}
+
+@media (max-width: 991px) {
+  .docclasesiniu-section-2 .docclasesiniu-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .docclasesiniu-section-2 .docclasesiniu-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .docclasesiniu-section-2 .docclasesiniu-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .docclasesiniu-section-2 .docclasesiniu-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .docclasesiniu-section-2 .docclasesiniu-layout-wrap-1 {
+    margin-top: 114px;
+  }
+}

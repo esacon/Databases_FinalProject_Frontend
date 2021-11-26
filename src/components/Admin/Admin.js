@@ -9,9 +9,9 @@ import hourIcon from '../../images/hourglass.png'
 import teacherIcon from '../../images/teacher.png'
 import diplomaIcon from '../../images/diploma.png'
 import bookIcon from '../../images/book.png'
+import {rutas} from '../../path.js';
 
-
-const Admin = () => {
+const Admin = () => { 
     return (
         <>
             <div class="containerPerfilAdmin">
@@ -20,63 +20,69 @@ const Admin = () => {
         </div>
         <div class=" containerCategorias mgl25 mgb20">
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_ASI}>
                 <span><img src={noteIcon} alt=""/></span>
                 Asignatura
                 </a> 
             </div>
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_CUR}>
                 <span><img src={courseIcon} alt=""/></span>
                 Curso
                 </a>
             </div>
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_DEP}>
                 <span><img src={skyIcon} alt=""/></span>
                 Departamento
-                </a>
-                <span><img src={skyIcon} alt=""/></span>
-                Departamento
+                </a>    
             </div>
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_EST}>
                 <span><img src={studentIcon} alt=""/></span>
                 Estudiante
                 </a>
                 
             </div>
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_MAT}>
                 <span><img src={moneyIcon} alt=""/></span>
                  Matricula    
                 </a>
-                <span><img src={moneyIcon} alt=""/></span>
-                Matricula
+                
             </div>
             <div class="caja center left">
-                <a href="">
+                <a href={rutas.ADM_PER}>
                 <span><img src={hourIcon} alt=""/></span>
                 Periodo
                 </a>
                
             </div>
             <div class="caja center left">
-                <
+                <a href={rutas.ADM_DOC}>
                 <span><img src={teacherIcon} alt=""/></span>
                 Profesor
+                </a>
             </div>
             <div class="caja center left">
+                <a href={rutas.ADM_PRG}>
                 <span><img src={diplomaIcon} alt=""/></span>
                 Programa
+                </a>
+                
             </div>
             <div class="caja center left">
+                <a href={rutas.ADM_SAL}>
                 <span><img src={courseIcon} alt=""/></span>
                 Salon
+                </a>
+                
             </div>
             <div class="caja center left">
+                <a href={rutas.ADM_PLN}>
                 <span><img src={bookIcon} alt=""/></span>
-                Plan de estudios
+                 Plan de estudios
+                </a>
             </div>
 
         </div>

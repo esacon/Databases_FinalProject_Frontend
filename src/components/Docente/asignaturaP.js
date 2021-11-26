@@ -1,82 +1,50 @@
 import React, { useEffect, useState } from 'react';
+import '../../css/nicepage/Docente-claseINFO.css'
+import '../../css/nicepage/nicepagedocclaseinfo.css'
 
 const asignaturaP = () => {
-        const [asignaturasPro, setAsignaturas] = useState([]);
-    
-        useEffect(() => {
-            getAsignaturas();
-        }, []);
-    
-    
-        const getAsignaturas = async () => {
-            try {
-                const response = await axios.get('ruta para obtener los asignaturas de un profesor determinado');
-                console.log(response.data.asignaturas);
-                setAsignaturas(response.data.asignaturas);
-            } catch (error) {
-                console.log("Ha ocurrido un error");
-            }
-        }
-    return (
+  return (
         <>
-            <header class="py-5">
-          <div class="container px-lg-5">
-            <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-              <div class="m-4 m-lg-5">
-                <div
-                  class="
-                    feature
-                    bg-primary bg-gradient
-                    text-white
-                    rounded-3
-                    mb-4
-                    mt-n1
-                  "
-                >
-                  <i class="bi bi-book"></i>
-                </div>
-                <h1 class="display-5 fw-bold">Asignaturas</h1>
-                <p class="fs-4">
-                  Para este semestre SemestreQueCursa estos son las asignaturas impartidas
-                </p>
+      <section class="docclaseinfou-clearfix docclaseinfou-image docclaseinfou-section-1" id="sec-efed" data-image-width="3375" data-image-height="2250">
+        <div class="docclaseinfou-clearfix docclaseinfou-sheet docclaseinfou-sheet-1">
+          <div class="docclaseinfou-align-left docclaseinfou-container-style docclaseinfou-group docclaseinfou-shape-rectangle docclaseinfou-white docclaseinfou-group-1">
+            <div class="docclaseinfou-container-layout docclaseinfou-container-layout-1">
+              <h1 class="docclaseinfou-align-center docclaseinfou-text docclaseinfou-text-1">AsignaturaNombre</h1>
+              <p class="docclaseinfou-text docclaseinfou-text-2">Codigo:&nbsp;<br/>Numero estudiantes:<br/>Horario: Dia - hora<br/>Duracion:;<br/>Lugar:
+              </p>
               </div>
-            </div>
-          </div>
-        </header>
-        <section class="pt-4">
-          <div class="container px-lg-5">
-
-              {
-                  asignaturasPro.map((asi)=>{
-                  <div class="row gx-lg-5">
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                      <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                          <div
-                            class="
-                              feature
-                              bg-primary bg-gradient
-                              text-black
-                              rounded-3
-                              mb-4
-                              mt-n4
-                            "
-                          >
-                          <i class="bi bi-collection-play-fill"></i>
-                          </div>
-                          <h2 class="fs-4 fw-bold">{asi.nombre}</h2>
-                          <p class="mb-0">{asi.id}</p>
-                          <p class="mb-0">{asi.departamento}</p>
+              </div>
+              </div>
+              </section>
+              <section class="docclaseinfou-clearfix docclaseinfou-section-2" id="sec-85d2">
+                <div class="docclaseinfou-align-left docclaseinfou-clearfix docclaseinfou-sheet docclaseinfou-sheet-1">
+                  <h1 class="docclaseinfou-text docclaseinfou-text-palette-2-base docclaseinfou-title docclaseinfou-text-1">Sesiones</h1>
+                  <div class="docclaseinfou-expanded-width docclaseinfou-list docclaseinfou-list-1">
+                    <div class="docclaseinfou-repeater docclaseinfou-repeater-1">
+                      <div class="docclaseinfou-container-style docclaseinfou-list-item docclaseinfou-repeater-item">
+                        <div class="docclaseinfou-container-layout docclaseinfou-similar-container docclaseinfou-container-layout-1">
+                          <h3 class="docclaseinfou-align-center docclaseinfou-text docclaseinfou-text-2">Fecha_Sesion</h3>
+                          <a href="https://nicepage.com/c/technology-html-templates" class="docclaseinfou-border-2 docclaseinfou-border-palette-2-base docclaseinfou-btn docclaseinfou-btn-round docclaseinfou-button-style docclaseinfou-hover-palette-2-base docclaseinfou-none docclaseinfou-radius-6 docclaseinfou-text-body-color docclaseinfou-text-hover-white docclaseinfou-btn-1">Consultar asistencia</a>
+                        </div>
+                      </div>
+                      <div class="docclaseinfou-container-style docclaseinfou-list-item docclaseinfou-repeater-item">
+                        <div class="docclaseinfou-container-layout docclaseinfou-similar-container docclaseinfou-container-layout-2">
+                          <h3 class="docclaseinfou-align-center docclaseinfou-text docclaseinfou-text-3">Fecha_Sesion</h3>
+                          <a href="https://nicepage.com/c/technology-html-templates" class="docclaseinfou-border-2 docclaseinfou-border-palette-2-base docclaseinfou-btn docclaseinfou-btn-round docclaseinfou-button-style docclaseinfou-hover-palette-2-base docclaseinfou-none docclaseinfou-radius-6 docclaseinfou-text-body-color docclaseinfou-text-hover-white docclaseinfou-btn-2">Consultar asistencia</a>
+                        </div>
+                      </div>
+                      <div class="docclaseinfou-container-style docclaseinfou-list-item docclaseinfou-repeater-item">
+                        <div class="docclaseinfou-container-layout docclaseinfou-similar-container docclaseinfou-container-layout-3">
+                          <h3 class="docclaseinfou-align-center docclaseinfou-text docclaseinfou-text-4">Fecha_Sesion</h3>
+                          <a href="https://nicepage.com/c/technology-html-templates" class="docclaseinfou-border-2 docclaseinfou-border-palette-2-base docclaseinfou-btn docclaseinfou-btn-round docclaseinfou-button-style docclaseinfou-hover-palette-2-base docclaseinfou-none docclaseinfou-radius-6 docclaseinfou-text-body-color docclaseinfou-text-hover-white docclaseinfou-btn-3">Consultar asistencia</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  })
-              }
-          </div>
-        </section>
-        </>
-    );
+                </div>
+              </section>
+            </>
+            );
 }
 
-export default asignaturaP;
+            export default asignaturaP;

@@ -1,0 +1,326 @@
+ .doccursou-section-1 {
+  background-image: url("https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 50% 50%;
+}
+
+.doccursou-section-1 .doccursou-sheet-1 {
+  min-height: 445px;
+}
+
+.doccursou-section-1 .doccursou-group-1 {
+  width: 678px;
+  min-height: 295px;
+  background-image: none;
+  margin: 75px auto 60px 0;
+}
+
+.doccursou-section-1 .doccursou-container-layout-1 {
+  padding: 30px 44px;
+}
+
+.doccursou-section-1 .doccursou-group-2 {
+  min-height: 143px;
+  width: 420px;
+  margin: 42px auto 0 1px;
+}
+
+.doccursou-section-1 .doccursou-text-1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: left;
+  margin: 0 auto 0 0;
+}
+
+.doccursou-section-1 .doccursou-text-2 {
+  text-align: left;
+  margin: 28px 0 -1px;
+}
+
+.doccursou-section-1 .doccursou-icon-1 {
+  width: 115px;
+  height: 115px;
+  margin: -122px 27px 7px auto;
+}
+
+@media (max-width: 1199px) {
+  .doccursou-section-1 .doccursou-sheet-1 {
+    min-height: 367px;
+  }
+
+  .doccursou-section-1 .doccursou-group-1 {
+    width: 454px;
+  }
+
+  .doccursou-section-1 .doccursou-container-layout-1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .doccursou-section-1 .doccursou-sheet-1 {
+    min-height: 623px;
+  }
+
+  .doccursou-section-1 .doccursou-group-1 {
+    width: 360px;
+    min-height: 503px;
+  }
+
+  .doccursou-section-1 .doccursou-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+   .doccursou-section-1 {
+    background-position: 45% 39.89%;
+  }
+
+  .doccursou-section-1 .doccursou-group-1 {
+    width: 324px;
+  }
+
+  .doccursou-section-1 .doccursou-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+   .doccursou-section-1 {
+    background-position: 61.4% 39.89%;
+  }
+
+  .doccursou-section-1 .doccursou-sheet-1 {
+    min-height: 567px;
+  }
+
+  .doccursou-section-1 .doccursou-group-1 {
+    width: 226px;
+    min-height: 497px;
+  }
+
+  .doccursou-section-1 .doccursou-group-2 {
+    width: 320px;
+    margin-left: 0;
+  }
+
+  .doccursou-section-1 .doccursou-text-1 {
+    font-size: 1.875rem;
+  }
+}.doccursou-section-2 .doccursou-sheet-1 {
+  min-height: 942px;
+}
+
+.doccursou-section-2 .doccursou-text-1 {
+  margin: 32px auto 0;
+}
+
+.doccursou-section-2 .doccursou-form-1 {
+  height: 124px;
+  width: 512px;
+  margin: 0 auto;
+}
+
+.doccursou-section-2 .doccursou-form-group-1 {
+  margin-left: 0;
+}
+
+.doccursou-section-2 .doccursou-layout-wrap-1 {
+  width: 897px;
+  margin: 21px auto 60px;
+}
+
+.doccursou-section-2 .doccursou-layout-cell-1 {
+  min-height: 427px;
+}
+
+.doccursou-section-2 .doccursou-container-layout-1 {
+  padding: 0 30px;
+}
+
+.doccursou-section-2 .doccursou-icon-1 {
+  width: 86px;
+  height: 86px;
+  background-image: none;
+  text-align: left;
+  margin: 12px auto 0;
+}
+
+.doccursou-section-2 .doccursou-text-2 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-3 {
+  text-align: left;
+  margin: 29px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-4 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-5 {
+  text-align: center;
+  margin: 29px 0 0;
+}
+
+.doccursou-section-2 .doccursou-layout-cell-2 {
+  min-height: 427px;
+}
+
+.doccursou-section-2 .doccursou-container-layout-2 {
+  padding: 0 30px;
+}
+
+.doccursou-section-2 .doccursou-icon-2 {
+  width: 86px;
+  height: 86px;
+  background-image: none;
+  text-align: left;
+  margin: 12px auto 0;
+}
+
+.doccursou-section-2 .doccursou-text-6 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-7 {
+  text-align: left;
+  margin: 29px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-8 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-9 {
+  text-align: center;
+  margin: 29px 0 0;
+}
+
+.doccursou-section-2 .doccursou-layout-cell-3 {
+  min-height: 427px;
+}
+
+.doccursou-section-2 .doccursou-container-layout-3 {
+  padding: 0 30px;
+}
+
+.doccursou-section-2 .doccursou-icon-3 {
+  width: 86px;
+  height: 86px;
+  background-image: none;
+  text-align: left;
+  margin: 12px auto 0;
+}
+
+.doccursou-section-2 .doccursou-text-10 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-11 {
+  text-align: left;
+  margin: 29px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-12 {
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.doccursou-section-2 .doccursou-text-13 {
+  text-align: center;
+  margin: 29px 0 0;
+}
+
+@media (max-width: 1199px) {
+  .doccursou-section-2 .doccursou-text-1 {
+    margin-top: -5px;
+  }
+
+  .doccursou-section-2 .doccursou-form-1 {
+    margin-top: 37px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-wrap-1 {
+    position: relative;
+  }
+}
+
+@media (max-width: 991px) {
+  .doccursou-section-2 .doccursou-sheet-1 {
+    min-height: 216px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-wrap-1 {
+    width: 720px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-cell-3 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .doccursou-section-2 .doccursou-sheet-1 {
+    min-height: 337px;
+  }
+
+  .doccursou-section-2 .doccursou-text-1 {
+    margin-top: 390px;
+  }
+
+  .doccursou-section-2 .doccursou-form-1 {
+    margin-top: -358px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-wrap-1 {
+    width: 540px;
+  }
+
+  .doccursou-section-2 .doccursou-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .doccursou-section-2 .doccursou-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .doccursou-section-2 .doccursou-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .doccursou-section-2 .doccursou-text-1 {
+    margin-top: 374px;
+  }
+
+  .doccursou-section-2 .doccursou-form-1 {
+    margin-top: -342px;
+    width: 340px;
+  }
+
+  .doccursou-section-2 .doccursou-layout-wrap-1 {
+    width: 340px;
+  }
+}
