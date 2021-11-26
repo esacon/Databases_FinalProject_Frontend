@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*Estilos landing page*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    width: 100%;
+    height:50px;
+    background-color:#0077b6;
+    color: white;
+}
+.navbar .item-izquierda:hover{
+    background-color: #232581;
+}
+.navbar .op1:hover,.op2:hover,.op3:hover{
+    background-color: #232581;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.op{
+    display: inline-block;
+    height: 50px;
+    margin: 10px;
+}
+.lista li{
+    line-height: 50px;
+}
+.logo{
+    line-height: 45px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.login{
+    width: 150px;
+    height: 60px;
+    font-weight: 900;
+    background-color: #ade8f4;
+    border: none;
+    border-bottom: 1px solid black ;
+    border-radius: 30px 0 30px 0;
+}
+.login:hover{
+    background-color:#48cae4 ;
+}
+.mb50{
+    margin-bottom: 50px;
+}
+.mb35{
+    margin-bottom: 35px;
+}
+/*Estilos creando curso*/
+
+/* .ffcw{
+flex-flow: column wrap;
+}
+.fdc{
+    flex-direction: column;
+}
+.h300px{
+    height: 300px;
+}
+.aliFs{
+    align-items: flex-start;
+}
+.aliC{
+    align-items: center;
+}
+.jfCSPB
+.dpF{
+    display: flex;
+} */
+.containerCurso{
+    display: flex;
+    flex-direction: column;
+}
+.formularioCurso{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:450px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+.formularioCurso label{
+margin-bottom: 8px;
+
+}
+.formularioCurso input{
+    margin-bottom: 8px;
+    
+}
+.formularioCurso select{
+    margin-bottom: 8px;
+
+}
+.formularioCurso time{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.btnCurso{
+    background-color: #90e0ef;
+    border: none;
+    width:120px;
+    height: 30px;
+    border-radius: 20px  0 20px 0;
+}
+.btnCurso:hover{
+    background-color:#48cae4;
+}
+
+/*Estilos creando departamento*/
+.containerDepartamento{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioDepartamento{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:210px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioDepartamento label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioDepartamento input{
+        margin-bottom: 8px;
+        
+    }
+    .formularioDepartamento select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }
+
+    /*Estilos creando estudiante*/
+    .containerEstudiante{
+        display: flex;
+        flex-direction: column;
+    }
+    .formularioEstudiante{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height:210px;
+        padding: 10px;
+        background-color:#e8f0f3f5 ;
+    }
+    
+    .formularioEstudiante label{
+        margin-bottom: 8px;
+        
+        }
+        .formularioEstudiante input{
+            margin-bottom: 8px;
+            
+        }
+        .formularioEstudiante select{
+            margin-bottom: 8px;
+        }
+        .formularioCurso time{
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        
+        .btn{
+            background-color: #90e0ef;
+            border: none;
+            width:120px;
+            height: 30px;
+            border-radius: 20px  0 20px 0;
+        }
+        .btn:hover{
+            background-color:#48cae4;
+        }
+    /*Estilos creando periodo*/
+    .containerPeriodo{
+        display: flex;
+        flex-direction: column;
+    }
+    .formularioPeriodo{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height:410px;
+        padding: 10px;
+        background-color:#e8f0f3f5 ;
+    }
+    
+    .formularioPeriodo label{
+        margin-bottom: 8px;
+        
+        }
+        .formularioPeriodo input{
+            margin-bottom: 8px;
+            
+        }
+        .formularioPeriodo select{
+            margin-bottom: 8px;
+        }
+        .formularioCurso time{
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        
+        .btn{
+            background-color: #90e0ef;
+            border: none;
+            width:120px;
+            height: 30px;
+            border-radius: 20px  0 20px 0;
+        }
+        .btn:hover{
+            background-color:#48cae4;
+        }
+    /*Estilos creando cursoEst*/
+    .containerCursoEst{
+        display: flex;
+        flex-direction: column;
+    }
+    .formularioCursoEst{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height:440px;
+        padding: 10px;
+        background-color:#e8f0f3f5 ;
+    }
+    
+    .formularioCursoEst label{
+        margin-bottom: 8px;
+        
+        }
+        .formularioCursoEst input{
+           margin-top: 8px;
+            margin-bottom: 8px;
+            
+        }
+        .formularioCursoEst select{
+            margin-bottom: 8px;
+        }
+        .formularioCurso time{
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .formularioCursoEst {
+            margin-bottom: 8px;
+        }
+        
+        .btn{
+            background-color: #90e0ef;
+            border: none;
+            width:120px;
+            height: 30px;
+            border-radius: 20px  0 20px 0;
+        }
+        .btn:hover{
+            background-color:#48cae4;
+        }
+/*Estilos creando profesor*/
+.containerProfesor{
+    display: flex;
+    flex-direction: column;
+}
+.formularioProfesor{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:210px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioProfesor label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioProfesor input{
+        margin-bottom: 8px;
+        
+    }
+    .formularioProfesor select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }
+
+ /*Estilos creando programaEst*/
+ .containerProgramaEst{
+    display: flex;
+    flex-direction: column;
+}
+.formularioProgramaEst{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:440px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioProgramaEst label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioProgramaEst input{
+       margin-top: 8px;
+        margin-bottom: 8px;
+        
+    }
+    .formularioProgramaEst select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    .formularioProgramaEst {
+        margin-bottom: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }
+
+/*Estilos creando Asignatura*/
+.containerAsignatura{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioAsignatura{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:330px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioAsignatura label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioAsignatura input{
+        margin-bottom: 8px;
+        
+    }
+    .formularioAsignatura select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }
+
+  /*Estilos creando matricula*/
+  .containerMatricula{
+    display: flex;
+    flex-direction: column;
+}
+.formularioMatricula{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:440px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioMatricula label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioMatricula input{
+       margin-top: 8px;
+        margin-bottom: 8px;
+        
+    }
+    .formularioMatricula select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    .formularioMatricula {
+        margin-bottom: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }
+
+/* perfil admin */
+.left{
+    float: left;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border:1px solid #01497c;
+    margin: 5px;
+    
+}
+.caja:hover{
+    background-color:#89c2d9 ;
+}
+
+a{
+    text-decoration: none;
+}
+.mgl25{
+    margin-left: 25px;
+} 
+.mgb20{
+    margin-bottom: 20px;
+}
+/*Estilos creando salon*/
+.containerSalon{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioSalon{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height:210px;
+    padding: 10px;
+    background-color:#e8f0f3f5 ;
+}
+
+.formularioSalon label{
+    margin-bottom: 8px;
+    
+    }
+    .formularioSalon input{
+        margin-bottom: 8px;
+        
+    }
+    .formularioSalon select{
+        margin-bottom: 8px;
+    }
+    .formularioCurso time{
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .btn{
+        background-color: #90e0ef;
+        border: none;
+        width:120px;
+        height: 30px;
+        border-radius: 20px  0 20px 0;
+    }
+    .btn:hover{
+        background-color:#48cae4;
+    }

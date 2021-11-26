@@ -1,5 +1,5 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import { rutas} from './path';
 import ProtectedRoute from './components/Login/routes/ProtectedRoute';
@@ -11,16 +11,24 @@ import Docente from './components/Docente/Docente';
 import Pendiente from './components/views/Pendiente';
 import Unauthorized from './components/views/Unauthorized';
 import EnCurso from './components/Docente/enCurso';
-import AsignaturaCreate from './components/Admin/asignaturaCreate';
-import CursoCreate from './components/Admin/cursoCreate';
-import DepartamentoCreate from './components/Admin/departamentoCreate';
-import ProfeCreate from './components/Admin/profeCreate';
-import EstudianteCreate from './components/Admin/estudianteCreate';
-import MatriculaCreate from './components/Admin/matriculaCreate';
-import PeriodoCreate from './components/Admin/periodoCreate';
-import PlanCreate from './components/Admin/planCreate';
-import ProgramaCreate from './components/Admin/programaCreate';
-import SalonCreate from './components/Admin/salonCreate';
+import AsignaturaCreate from './components/Admin/Asignatura/asignaturaCreate';
+import CursoCreate from './components/Admin/Curso/cursoCreate';
+
+import DepartamentoCreate from './components/Admin/Departamento/create';
+import ListaDepartamentos from './components/Admin/Departamento/delete';
+import UpdateDepartamento from './components/Admin/Departamento/update';
+
+import ProfeCreate from './components/Admin/Docente/profeCreate';
+
+import EstudianteCreate from './components/Admin/Estudiante/estudianteCreate';
+import ListaEstudiantes from './components/Admin/Estudiante/delete';
+
+import MatriculaCreate from './components/Admin/Matricula/matriculaCreate';
+import PeriodoCreate from './components/Admin/Periodo/periodoCreate';
+import PlanCreate from './components/Admin/Plan/planCreate';
+import ProgramaCreate from './components/Admin/Programa/programaCreate';
+import SalonCreate from './components/Admin/Salon/salonCreate';
+import './css/estilos.css'
 
 
 function App() {
@@ -32,9 +40,16 @@ function App() {
           <ProtectedRoute exact path={rutas.ADMIN} component={Admin} />
           <ProtectedRoute exact path={rutas.ADM_ASI} component={AsignaturaCreate} />
           <ProtectedRoute exact path={rutas.ADM_CUR} component={CursoCreate} />
+
           <ProtectedRoute exact path={rutas.ADM_DEP} component={DepartamentoCreate} />
+          <ProtectedRoute exact path={rutas.ADM_DEP_L} component={ListaDepartamentos} />
+          <ProtectedRoute exact path={rutas.ADM_DEP_U} component={UpdateDepartamento} />
+
           <ProtectedRoute exact path={rutas.ADM_DOC} component={ProfeCreate} />
+
           <ProtectedRoute exact path={rutas.ADM_EST} component={EstudianteCreate} />
+          <ProtectedRoute exact path={rutas.ADM_EST_L} component={ListaEstudiantes} />
+
           <ProtectedRoute exact path={rutas.ADM_MAT} component={MatriculaCreate} />
           <ProtectedRoute exact path={rutas.ADM_PER} component={PeriodoCreate} />
           <ProtectedRoute exact path={rutas.ADM_PLN} component={PlanCreate} />
