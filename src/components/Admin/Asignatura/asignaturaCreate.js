@@ -3,7 +3,7 @@ import axios from 'axios';
 import { DB_URL } from '../../../connection';
 import Icon from '../../../images/courses.png'
 
-const AsignaturaCreate = () => {
+const ListaAsignaturas = () => {
 
     // Funciones que se ejecutan al cargar la página.
     useEffect(() => {
@@ -74,4 +74,4 @@ const AsignaturaCreate = () => {
     );
 }
 
-export default AsignaturaCreate;
+export default ListaAsignaturas;

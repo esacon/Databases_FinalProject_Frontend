@@ -12,6 +12,7 @@ import Pendiente from './components/views/Pendiente';
 import Unauthorized from './components/views/Unauthorized';
 import EnCurso from './components/Docente/enCurso';
 import AsignaturaCreate from './components/Admin/Asignatura/asignaturaCreate';
+import ListaAsignaturas from './components/Admin/Asignatura/update';
 import CursoCreate from './components/Admin/Curso/cursoCreate';
 
 import DepartamentoCreate from './components/Admin/Departamento/create';
@@ -42,31 +43,32 @@ function App() {
       <Router>
         <Switch>
           <PublicRoute exact path={rutas.LOGIN} component={Login} />
-          <PublicRoute exact path={rutas.ADMIN} component={Admin} />/* */
-          <PublicRoute exact path={rutas.ADM_ASI} component={AsignaturaCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_CUR} component={CursoCreate} />/* */
+          <ProtectedRoute exact path={rutas.ADMIN} component={Admin} />
+          <ProtectedRoute exact path={rutas.ADM_ASI} component={AsignaturaCreate} />
+          <ProtectedRoute exact path={rutas.ADM_ASI_L} component={ListaAsignaturas} />
+          <ProtectedRoute exact path={rutas.ADM_CUR} component={CursoCreate} />
 
-          <PublicRoute exact path={rutas.ADM_DEP} component={DepartamentoCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_DEP_L} component={ListaDepartamentos} />/* */
-          <PublicRoute exact path={rutas.ADM_DEP_U} component={UpdateDepartamento} />/* */
+          <ProtectedRoute exact path={rutas.ADM_DEP} component={DepartamentoCreate} />/
+          <ProtectedRoute exact path={rutas.ADM_DEP_L} component={ListaDepartamentos} />
+          <ProtectedRoute exact path={rutas.ADM_DEP_U} component={UpdateDepartamento} />
 
-          <PublicRoute exact path={rutas.ADM_DOC} component={ProfeCreate} />/* */
+          <ProtectedRoute exact path={rutas.ADM_DOC} component={ProfeCreate} />
 
-          <PublicRoute exact path={rutas.ADM_EST} component={EstudianteCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_EST_L} component={ListaEstudiantes} />/* */
+          <ProtectedRoute exact path={rutas.ADM_EST} component={EstudianteCreate} />
+          <ProtectedRoute exact path={rutas.ADM_EST_L} component={ListaEstudiantes} />
 
-          <PublicRoute exact path={rutas.ADM_MAT} component={MatriculaCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_PER} component={PeriodoCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_PLN} component={PlanCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_PRG} component={ProgramaCreate} />/* */
-          <PublicRoute exact path={rutas.ADM_SAL} component={SalonCreate} />/* */
-          <PublicRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />/* */
+          <ProtectedRoute exact path={rutas.ADM_MAT} component={MatriculaCreate} />
+          <ProtectedRoute exact path={rutas.ADM_PER} component={PeriodoCreate} />
+          <ProtectedRoute exact path={rutas.ADM_PLN} component={PlanCreate} />
+          <ProtectedRoute exact path={rutas.ADM_PRG} component={ProgramaCreate} />
+          <ProtectedRoute exact path={rutas.ADM_SAL} component={SalonCreate} />
+          <ProtectedRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />
 
 
-          <PublicRoute exact path={rutas.DOCENTE} component={Docente} />/* */
-          <PublicRoute exact path={rutas.DOC_CRS} component={docenteCursos} />/* */
-          <PublicRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />/* */
-          <PublicRoute exact path={rutas.DOC_CLSP} component={claseP} />
+          <ProtectedRoute exact path={rutas.DOCENTE} component={Docente} />
+          <ProtectedRoute exact path={rutas.DOC_CRS} component={docenteCursos} />
+          <ProtectedRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />
+          <ProtectedRoute exact path={rutas.DOC_CLSP} component={claseP} />
 
 
           <PublicRoute exact path={rutas.PENDIENTE} component={Pendiente} />

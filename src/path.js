@@ -14,6 +14,8 @@ export const rutas = {
     EST_MAT: "/estudiante/matricula",
     ADMIN: "/admin",
     ADM_ASI: "/admin/asignatura",
+    ADM_ASI_L: "/admin/asignatura/opciones",
+    ADM_ASI_U: "/admin/asignatura/update",
     ADM_CUR: "/admin/curso",
     
     ADM_DEP: "/admin/departamento",
