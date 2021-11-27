@@ -7,6 +7,7 @@ import ProtectedRoute from './components/Login/routes/ProtectedRoute';
 import Login from './components/Login/Login';
 import Admin from './components/Admin/Admin';
 import Estudiante from './components/Estudiante/Estudiante';
+import cursoE from './components/Estudiante/cursos';
 
 import Pendiente from './components/views/Pendiente';
 import Unauthorized from './components/views/Unauthorized';
@@ -33,6 +34,7 @@ import Docente from './components/Docente/Docente';
 import docenteCursos from './components/Docente/docente-cursos';
 import docenteCursosINI from './components/Docente/iniciando';
 import claseP from './components/Docente/asignaturaP';
+import ingreso from './components/Estudiante/entrando';
 import './css/estilos.css'
 
 
@@ -61,12 +63,15 @@ function App() {
           <PublicRoute exact path={rutas.ADM_PRG} component={ProgramaCreate} />/* */
           <PublicRoute exact path={rutas.ADM_SAL} component={SalonCreate} />/* */
           <PublicRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />/* */
+          <PublicRoute exact path={rutas.EST_CUR} component={cursoE} />/* */
+          <PublicRoute exact path={rutas.EST_ING} component={ingreso} />/* */
 
 
           <PublicRoute exact path={rutas.DOCENTE} component={Docente} />/* */
           <PublicRoute exact path={rutas.DOC_CRS} component={docenteCursos} />/* */
           <PublicRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />/* */
           <PublicRoute exact path={rutas.DOC_CLSP} component={claseP} />
+          
 
 
           <PublicRoute exact path={rutas.PENDIENTE} component={Pendiente} />
