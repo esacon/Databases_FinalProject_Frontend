@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../css/nicepage/Estudiante.css'
 import '../../css/nicepage/nicepageestudi.css'
+import { rutas } from '../../path';
 
 const Estudiante = () => {
     return (
@@ -37,7 +38,7 @@ const Estudiante = () => {
 </g></svg></span>
                 <h5 class="estudiuu-text estudiuu-text-palette-2-base estudiuu-text-2">Revisar cursos</h5>
                 <p class="estudiuu-text estudiuu-text-grey-40 estudiuu-text-3">Revise los cursos que tiene o tenía asignados.</p>
-                <a href="estudiante-cursos.html" data-page-id="825420159" class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-1">Ingresar<br/>
+                <a href={rutas.EST_CUR} data-page-id="825420159" class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-1">Ingresar<br/>
                 </a>
               </div>
             </div>
@@ -46,8 +47,8 @@ const Estudiante = () => {
 </g>
 </g></svg></span>
                 <h5 class="estudiuu-text estudiuu-text-palette-2-base estudiuu-text-4">Ingresar a clase</h5>
-                <p class="estudiuu-text estudiuu-text-grey-40 estudiuu-text-5">Revise las clases proximas a iniciar e inicie las correspondientes una vez llegada la hora.</p>
-                <a href="https://nicepage.com/k/consulting-website-templates" class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-2">Ingresar</a>
+                <p class="estudiuu-text estudiuu-text-grey-40 estudiuu-text-5">Ingrese los codigos del curso y del profesor para registar su asistencia a clase.</p>
+                <a href={rutas.EST_ING} class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-2">Ingresar</a>
               </div>
             </div>
           </div>

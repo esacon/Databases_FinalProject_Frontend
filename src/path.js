@@ -1,17 +1,23 @@
 export const rutas = {
     LOGIN: "/",
     UNAUTHORIZED: "/unauthorized",
-    DOCENTE: "/docente",
-    DOC_INI: "/docente/iniciando",
+
+
+    DOCENTE: "/docente",//
+    DOC_INI: "/docente/iniciando",//
     DOC_ECU: "/docente/encurso",
-    DOC_CRS: "/docente/cursos",
+    DOC_CRS: "/docente/cursos",//
     DOC_CUR: "/docente/curso",
-    DOC_CLSP: "/docente/clase",
-    ESTUDIANTE: "/estudiante",
-    EST_ING: "/estudiante/ingreso",
-    EST_CUR: "/estudiante/cursos",
-    EST_ENT: "/estudiante/entrando",
-    EST_MAT: "/estudiante/matricula",
+    DOC_ASI: "/docente/asistencia",
+
+
+    ESTUDIANTE: "/estudiante",//
+    EST_ING: "/estudiante/ingreso",//
+    EST_CRS: "/estudiante/cursos",//
+    EST_CUR: "/estudiante/curso",
+    EST_ENT: "/estudiante/encurso",
+
+
     ADMIN: "/admin",
     ADM_ASI: "/admin/asignatura",
     ADM_CUR: "/admin/curso",

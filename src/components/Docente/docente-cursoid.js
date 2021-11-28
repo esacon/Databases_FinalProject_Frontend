@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../../css/nicepage/Docente-claseINFO.css'
-import '../../css/nicepage/nicepagedocclaseinfo.css'
+import '../../css/nicepage/estudiante-claseINFO.css'
+import '../../css/nicepage/nicepageestclaseinfo.css'
 
 const asignaturaP = () => {
   return (

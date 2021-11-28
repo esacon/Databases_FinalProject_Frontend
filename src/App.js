@@ -4,15 +4,13 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import { rutas} from './path';
 import PublicRoute from './components/Login/routes/PublicRoute';
 import ProtectedRoute from './components/Login/routes/ProtectedRoute';
-import Login from './components/Login/Login';
-import Admin from './components/Admin/Admin';
-import Estudiante from './components/Estudiante/Estudiante';
-import cursoE from './components/Estudiante/cursos';
-
 import Pendiente from './components/views/Pendiente';
 import Unauthorized from './components/views/Unauthorized';
-import EnCurso from './components/Docente/enCurso';
+import Login from './components/Login/Login';
+import Admin from './components/Admin/Admin';
+
 import AsignaturaCreate from './components/Admin/Asignatura/asignaturaCreate';
+
 import CursoCreate from './components/Admin/Curso/cursoCreate';
 
 import DepartamentoCreate from './components/Admin/Departamento/create';
@@ -25,16 +23,28 @@ import EstudianteCreate from './components/Admin/Estudiante/estudianteCreate';
 import ListaEstudiantes from './components/Admin/Estudiante/delete';
 
 import MatriculaCreate from './components/Admin/Matricula/matriculaCreate';
+
 import PeriodoCreate from './components/Admin/Periodo/periodoCreate';
+
 import PlanCreate from './components/Admin/Plan/planCreate';
+
 import ProgramaCreate from './components/Admin/Programa/programaCreate';
+
 import SalonCreate from './components/Admin/Salon/salonCreate';
 
+
+import Estudiante from './components/Estudiante/Estudiante';
+import EST_CRS from './components/Estudiante/estudiante-cursos';
+import EST_ING from './components/Estudiante/estudiante-ingreso';
+import EST_CUR from './components/Estudiante/estudiante-cursoid';
+
+
 import Docente from './components/Docente/Docente';
-import docenteCursos from './components/Docente/docente-cursos';
-import docenteCursosINI from './components/Docente/iniciando';
-import claseP from './components/Docente/asignaturaP';
-import ingreso from './components/Estudiante/entrando';
+import DOC_CRS from './components/Docente/docente-cursos';
+import DOC_INI from './components/Docente/docente-iniciando';
+import DOC_CUR from './components/Docente/docente-cursoid';
+import DOC_ENT from './components/Docente/docente-encurso';
+import DOC_ASI from './components/Docente/docente-sesion';
 import './css/estilos.css'
 
 
@@ -62,15 +72,19 @@ function App() {
           <PublicRoute exact path={rutas.ADM_PLN} component={PlanCreate} />/* */
           <PublicRoute exact path={rutas.ADM_PRG} component={ProgramaCreate} />/* */
           <PublicRoute exact path={rutas.ADM_SAL} component={SalonCreate} />/* */
+
           <PublicRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />/* */
-          <PublicRoute exact path={rutas.EST_CUR} component={cursoE} />/* */
-          <PublicRoute exact path={rutas.EST_ING} component={ingreso} />/* */
+          <PublicRoute exact path={rutas.EST_CRS} component={EST_CRS} />/* */
+          <PublicRoute exact path={rutas.EST_ING} component={EST_ING} />/* */
+          <PublicRoute exact path={rutas.EST_CUR} component={EST_CUR} />/* */
 
 
           <PublicRoute exact path={rutas.DOCENTE} component={Docente} />/* */
-          <PublicRoute exact path={rutas.DOC_CRS} component={docenteCursos} />/* */
-          <PublicRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />/* */
-          <PublicRoute exact path={rutas.DOC_CLSP} component={claseP} />
+          <PublicRoute exact path={rutas.DOC_CRS} component={DOC_CRS} />/* */
+          <PublicRoute exact path={rutas.DOC_INI} component={DOC_INI} />/* */
+          <PublicRoute exact path={rutas.DOC_CUR} component={DOC_CUR} />/* */
+          <PublicRoute exact path={rutas.DOC_ECU} component={DOC_ENT} />/* */
+          <PublicRoute exact path={rutas.DOC_ASI} component={DOC_ASI} />/* */
           
 
 
@@ -83,18 +97,5 @@ function App() {
   );
 }
 
-/**
- * 
- * 
-          <PublicRoute exact path={rutas.EST_ING} component={ingreso} />
-          <PublicRoute exact path={rutas.EST_CUR} component={curso} />
-          <PublicRoute exact path={rutas.EST_ENT} component={entrando} />
-          <PublicRoute exact path={rutas.EST_MAT} component={matricula} />
-          <PublicRoute exact path={rutas.DOCENTE} component={Docente} />
-          
-          <PublicRoute exact path={rutas.DOC_CUR} component={curso} />
-          <PublicRoute exact path={rutas.DOC_ECU} component={EnCurso} />
-          <PublicRoute exact path={rutas.DOC_INI} component={iniciando} />
- */
 
 export default App;
