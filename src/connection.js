@@ -1,1 +1,1 @@
-export const DB_URL = "http://localhost:5000/server/";
+export const DB_URL = "https://sabiduria-backend.herokuapp.com/server/";

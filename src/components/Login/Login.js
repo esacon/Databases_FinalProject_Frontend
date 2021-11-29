@@ -6,6 +6,7 @@ import LoginIcon from '../../images/user.png';
 import useAuthContext from './auth/hooks/useAuthContext';
 import { rutas } from "../../path";
 import '../../App.css';
+import { DB_URL } from '../../connection';
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -23,7 +24,7 @@ const Login = () => {
                 cookie.save('token', response.tokenId);
 
                 // https://sabiduria-backend.herokuapp.com/
-                const user = await fetch('http://localhost:5000/server/conexiones/users', {
+                const user = await fetch(DB_URL + 'conexiones/users', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
