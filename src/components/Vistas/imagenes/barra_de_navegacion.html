@@ -8,29 +8,15 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <nav>
-        <a href="">
-            <img src="imagenes/school.png" alt="school">
-        </a>
-        <button class="btnLog">
-            <img src="imagenes/log-in.png" alt="">
-        </button>
-    </nav>
-    <script>
-        let btn = document.querySelector(".btnLog");
-        //console.log(btn);
-        let sw=1;
-        btn.addEventListener("click",()=>{
-            if(sw==1){
-                sw=2;
-                
-                btn.children[0].setAttribute("src","imagenes/logout.png");
-
-            }else{
-                sw=1;
-                btn.children[0].setAttribute("src","imagenes/log-in.png");
-            }
-        })
-    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          
+          <a class="nav-link ml-auto" href="">
+              <img src="imagenes/log-in.png" alt="">
+          </a>
+        </div>
+      </nav>
+   
 </body>
 </html>

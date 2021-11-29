@@ -43,7 +43,8 @@ export default function AuthContextProvider({children}) {
                 setIsAdminAuthenticated(false);
 
                 cookie.save('id_docente', '');
-                cookie.save('id_estudiante', id);
+                cookie.save('idEstudiante', id);
+                console.log('Estudiante ID:', id);
 
                 window.localStorage.setItem(LOGIN_ESTUDIANTE, true);
                 window.localStorage.setItem(LOGIN_DOCENTE, false);
@@ -73,9 +74,10 @@ export default function AuthContextProvider({children}) {
                 console.log('UserID: ', userid);
 
                 const res = await axios.get(DB_URL + `/docente/${correo}`);
+                console.log(res);
                 const id = res.data[0].uuid;
                 console.log(id);
-                cookie.save('id_docente', id);
+                cookie.save('idDocente', id);
                 cookie.save('id_estudiante','');
 
                 setIsDocenteAuthenticated(true);

@@ -14,13 +14,13 @@ const DocenteEnCurso = () => {
               <h1 class="dociniinfoalign-center dociniinfotext dociniinfotext-1">CLASE NOMBRE</h1>
               <div class="dociniinfocontainer-style dociniinfogroup dociniinfogroup-2">
                 <div class="dociniinfocontainer-layout">
-                  <img class="dociniinfoexpanded-width dociniinfoimage dociniinfoimage-default dociniinfopreserve-proportions dociniinfoimage-1" src="https://static-unitag.com/images/help/QRCode/qrcode.png?mh=07b7c2a2" alt="" data-image-width="186" data-image-height="186" />
+                  
                   <h6 class="dociniinfoalign-center dociniinfotext dociniinfotext-2">CURSOCODE</h6>
                 </div>
               </div>
               <div class="dociniinfocontainer-style dociniinfogroup dociniinfogroup-3">
                 <div class="dociniinfocontainer-layout">
-                  <img class="dociniinfoexpanded-width dociniinfoimage dociniinfoimage-default dociniinfopreserve-proportions dociniinfoimage-2" src="https://static-unitag.com/images/help/QRCode/qrcode.png?mh=07b7c2a2" alt="" data-image-width="186" data-image-height="186" />
+                  
                   <h6 class="dociniinfoalign-center dociniinfotext dociniinfotext-3">PROFECODE</h6>
                 </div>
               </div>
