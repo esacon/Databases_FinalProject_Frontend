@@ -38,14 +38,14 @@ const AsignaturaUpdate = () => {
             console.log("Ha ocurrido un error");
         }
     }
-
+/*
     const [departamento, setDepartamento] = useState();
 
     const selectDepartamento = (e) => {
         const departamento = e.target.value;
         setDepartamento(departamento);
     };
-
+*/
 
     return (
         <>
@@ -53,7 +53,7 @@ const AsignaturaUpdate = () => {
                 <span><img src={Icon} alt="" /></span><h3 class="mb35">Creando Asignatura</h3>
                 <form class="formularioAsignatura" onSubmit={handleSubmit}>
                     <label for="codigo_dpto">Departamento</label>
-                    <select class="form-select" name="codigo_dpto" onChange={selectDepartamento}>
+                    <select class="form-select" name="codigo_dpto" /*onChange={selectDepartamento}*/>
                         {
                             departamentos.map((dep) => (
                                 <option value={dep.codigo}>{dep.nombre}</option>

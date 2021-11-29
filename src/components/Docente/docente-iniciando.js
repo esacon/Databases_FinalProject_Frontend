@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { rutas } from "../../path";
+import cookie from 'react-cookies';
 import axios from 'axios';
 import { DB_URL } from '../../connection';
-import useAuthContext from '../Login/auth/hooks/useAuthContext';
 import '../../css/nicepage/Docente-clasesINI.css'
 import '../../css/nicepage/nicepagedocclasesINI.css'
 
 const DocenteIniciando = () => {
-  const { idDocente } = useAuthContext();
+  const idDocente = cookie.load('id_docente');
 
-  const tarjeta = null;
-
+  var info = null;
   useEffect(() => {
     getCursosDocente();
   }, []);
@@ -23,7 +21,8 @@ const DocenteIniciando = () => {
     if (d.getMonth() > 7) {
       sec = 2
     }
-    const period = toString(d.getFullYear() * 100 + sec);
+    const period = (d.getFullYear() * 100 + sec).toString();
+    console.log(period, idDocente)
     try {
       const response = await axios.get(DB_URL + `curso/doc/${period}/${idDocente}`);
       setCursosDocente(response.data);
@@ -42,28 +41,27 @@ const DocenteIniciando = () => {
     if (dia === "Sabado") data = 6;
     return data;
   }
-  const generarT = () => {
-    var info = <></>;
+  
 
-    cursosDocente.forEach((curso) => {
-      let time = curso.hora.split(",");
-      let d = new Date().get;
-      let min = Math.abs(parseInt(time[1]) - d.getMinutes());
-      let hour = parseInt(time[0]) - d.getHours();
-      if (hour === 0 & min <= 20 & weekDay(curso.dia) === d.getDay()) {
-        info = <div class="docclasesiniu-align-center docclasesiniu-container-style docclasesiniu-layout-cell docclasesiniu-size-30 docclasesiniu-layout-cell-1">
-          <div class="docclasesiniu-container-layout docclasesiniu-container-layout-1"><span class="docclasesiniu-border-2 docclasesiniu-border-black docclasesiniu-icon docclasesiniu-icon-circle docclasesiniu-spacing-8 docclasesiniu-text-palette-2-base docclasesiniu-icon-1"><svg class="docclasesiniu-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 24 24" ><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#svg-1023"></use></svg><svg class="docclasesiniu-svg-content" viewBox="0 0 24 24" id="svg-1023"><path d="M17.2501 2.00052C18.7689 2.00052 20.0001 3.23173 20.0001 4.75052V19.2488C20.0001 20.7675 18.7689 21.9988 17.2501 21.9988H6.75C5.23122 21.9988 4 20.7675 4 19.2488V4.75052C4 3.49158 4.84596 2.43023 6.00044 2.10391L5.99963 3.75071C5.69623 3.97877 5.5 4.34173 5.5 4.75052V19.2488C5.5 19.9391 6.05964 20.4988 6.75 20.4988H17.2501C17.9405 20.4988 18.5001 19.9391 18.5001 19.2488V4.75052C18.5001 4.06016 17.9405 3.50052 17.2501 3.50052L15 3.5V2L17.2501 2.00052ZM14.0001 2V10.1389C14.0001 10.886 13.2007 11.1665 12.7109 10.9033L12.6279 10.8512L10.5019 9.56575L8.42379 10.8172C7.92411 11.1779 7.09342 10.9564 7.00736 10.2594L7.0001 10.1389V2H14.0001ZM12.5001 3.5H8.5001V9.02327L10.0734 8.07421C10.3377 7.93602 10.6574 7.93341 10.8906 8.05036L12.5001 9.02396V3.5Z" fill="currentColor"></path></svg></span>
-            <h3 class="docclasesiniu-text docclasesiniu-text-default docclasesiniu-text-1">{curso.id_asignatura}</h3>
-            <h5 class="docclasesiniu-text docclasesiniu-text-default docclasesiniu-text-2">{curso.id}</h5>
-            <h5 class="docclasesiniu-align-center docclasesiniu-text docclasesiniu-text-3">{curso.hora}</h5>
-            <p class="docclasesiniu-text docclasesiniu-text-4">Salon: {curso.id_salon}</p>
-            <a href={"/curso/iniciar/".concat(toString(curso.id))} class="docclasesiniu-border-2 docclasesiniu-border-palette-2-base docclasesiniu-btn docclasesiniu-btn-round docclasesiniu-button-style docclasesiniu-hover-palette-2-base docclasesiniu-none docclasesiniu-radius-6 docclasesiniu-text-body-color docclasesiniu-text-hover-white docclasesiniu-btn-1">Iniciar</a>
-          </div>
-        </div>;
-      }
+  cursosDocente.forEach((curso) => {
+    let time = curso.hora.split(":");
+    let d = new Date(Date.now());
+    console.log(time)
+    let min = Math.abs(parseInt(time[1]) - d.getMinutes());
+    let hour = parseInt(time[0]) - d.getHours();
+    console.log(d, min, hour )
+    if (hour === 0 & min <= 20 & weekDay(curso.dia) === d.getDay()) {
+      info = <><div class="docclasesiniu-align-center docclasesiniu-container-style docclasesiniu-layout-cell docclasesiniu-size-30 docclasesiniu-layout-cell-1">
+        <div class="docclasesiniu-container-layout docclasesiniu-container-layout-1"><span class="docclasesiniu-border-2 docclasesiniu-border-black docclasesiniu-icon docclasesiniu-icon-circle docclasesiniu-spacing-8 docclasesiniu-text-palette-2-base docclasesiniu-icon-1"><svg class="docclasesiniu-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 24 24" ><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#svg-1023"></use></svg><svg class="docclasesiniu-svg-content" viewBox="0 0 24 24" id="svg-1023"><path d="M17.2501 2.00052C18.7689 2.00052 20.0001 3.23173 20.0001 4.75052V19.2488C20.0001 20.7675 18.7689 21.9988 17.2501 21.9988H6.75C5.23122 21.9988 4 20.7675 4 19.2488V4.75052C4 3.49158 4.84596 2.43023 6.00044 2.10391L5.99963 3.75071C5.69623 3.97877 5.5 4.34173 5.5 4.75052V19.2488C5.5 19.9391 6.05964 20.4988 6.75 20.4988H17.2501C17.9405 20.4988 18.5001 19.9391 18.5001 19.2488V4.75052C18.5001 4.06016 17.9405 3.50052 17.2501 3.50052L15 3.5V2L17.2501 2.00052ZM14.0001 2V10.1389C14.0001 10.886 13.2007 11.1665 12.7109 10.9033L12.6279 10.8512L10.5019 9.56575L8.42379 10.8172C7.92411 11.1779 7.09342 10.9564 7.00736 10.2594L7.0001 10.1389V2H14.0001ZM12.5001 3.5H8.5001V9.02327L10.0734 8.07421C10.3377 7.93602 10.6574 7.93341 10.8906 8.05036L12.5001 9.02396V3.5Z" fill="currentColor"></path></svg></span>
+          <h3 class="docclasesiniu-text docclasesiniu-text-default docclasesiniu-text-1">{curso.id_asignatura}</h3>
+          <h5 class="docclasesiniu-text docclasesiniu-text-default docclasesiniu-text-2">{curso.id}</h5>
+          <h5 class="docclasesiniu-align-center docclasesiniu-text docclasesiniu-text-3">{curso.hora}</h5>
+          <p class="docclasesiniu-text docclasesiniu-text-4">Salon: {curso.id_salon}</p>
+          <a href={"/curso/iniciar/".concat(toString(curso.id))} class="docclasesiniu-border-2 docclasesiniu-border-palette-2-base docclasesiniu-btn docclasesiniu-btn-round docclasesiniu-button-style docclasesiniu-hover-palette-2-base docclasesiniu-none docclasesiniu-radius-6 docclasesiniu-text-body-color docclasesiniu-text-hover-white docclasesiniu-btn-1">Iniciar</a>
+        </div>
+      </div></>
+    }
     })
-    return info;
-  };
 
   return (
     <>
@@ -82,7 +80,7 @@ const DocenteIniciando = () => {
           <div class="docclasesiniu-clearfix docclasesiniu-expanded-width docclasesiniu-layout-wrap docclasesiniu-layout-wrap-1">
             <div class="docclasesiniu-layout">
               <div class="docclasesiniu-layout-row">
-                {generarT()}
+                {info}
               </div>
             </div>
           </div>

@@ -48,13 +48,6 @@ const CursoCreate = () => {
         }
     }
 
-    const [asignatura, setAsignatura] = useState([]);
-
-    const selectAsignatura = (e) => {
-        const asignatura = JSON.parse(e.target.value);
-        setAsignatura(asignatura);
-    };
-
     const [docentes, setDocentes] = useState([]);
 
     const getDocentes = async () => {
@@ -66,14 +59,6 @@ const CursoCreate = () => {
             console.log("Ha ocurrido un error");
         }
     }
-
-    const [docente, setDocente] = useState([]);
-
-    const selectDocente = (e) => {
-        const docente = JSON.parse(e.target.value);
-        setDocente(docente);
-    };
-
     const [periodos, setPeriodos] = useState([]);
 
     const getPeriodos = async () => {
@@ -86,12 +71,6 @@ const CursoCreate = () => {
         }
     }
 
-    const [periodo, setPeriodo] = useState([]);
-
-    const selectPeriodo = (e) => {
-        const periodo = JSON.parse(e.target.value);
-        setPeriodo(periodo);
-    };
 
     const [salones, setSalones] = useState([]);
 
@@ -104,7 +83,7 @@ const CursoCreate = () => {
             console.log("Ha ocurrido un error");
         }
     }
-
+/*
     const [salon, setSalon] = useState([]);
 
     const selectSalon = (e) => {
@@ -112,13 +91,34 @@ const CursoCreate = () => {
         setSalon(salon);
     };
 
+    const [periodo, setPeriodo] = useState([]);
+
+    const selectPeriodo = (e) => {
+        const periodo = JSON.parse(e.target.value);
+        setPeriodo(periodo);
+    };
+
+    const [docente, setDocente] = useState([]);
+
+    const selectDocente = (e) => {
+        const docente = JSON.parse(e.target.value);
+        setDocente(docente);
+    };
+
+    const [asignatura, setAsignatura] = useState([]);
+
+    const selectAsignatura = (e) => {
+        const asignatura = JSON.parse(e.target.value);
+        setAsignatura(asignatura);
+    };
+*/
     return (
         <>
             <div class="containerCurso center">
                 <span><img src={Icon} alt="" /></span><h3 class="mb35">Creando curso</h3>
                 <form class="formularioCurso" onSubmit={handleSubmit}>
                     <label for="uuid_docente">Docente</label>
-                    <select class="form-select" name="uuid_docente" id="" onChange={selectDocente}>
+                    <select class="form-select" name="uuid_docente" id="" /*onChange={selectDocente}*/>
                         {
                             docentes.map((doc) => (
                                 <option value={doc.uuid}>{doc.nombre}</option>
@@ -126,7 +126,7 @@ const CursoCreate = () => {
                         }
                     </select>
                     <label for="id_asignatura">Asignatura</label>
-                    <select class="form-select" name="id_asignatura" id="" onChange={selectAsignatura}>
+                    <select class="form-select" name="id_asignatura" id="" /*onChange={selectAsignatura}*/>
                         {
                             asignaturas.map((asi) => (
                                 <option value={asi.id}>{asi.nombre}</option>
@@ -134,7 +134,7 @@ const CursoCreate = () => {
                         }
                     </select>
                     <label for="id_salon">Salon</label>
-                    <select class="form-select" name="id_salon" id="" onChange={selectSalon}>
+                    <select class="form-select" name="id_salon" id="" /*onChange={selectSalon}*/>
                         {
                             salones.map((sal) => (
                                 <option value={sal.id}>{sal.id}</option>
@@ -142,7 +142,7 @@ const CursoCreate = () => {
                         }
                     </select>
                     <label for="">Periodo</label>
-                    <select class="form-select" name="id_periodo" id="" onChange={selectPeriodo}>
+                    <select class="form-select" name="id_periodo" id="" /*onChange={selectPeriodo}*/>
                         {
                             periodos.map((asi) => (
                                 <option value={asi.id}>{asi.id}</option>
