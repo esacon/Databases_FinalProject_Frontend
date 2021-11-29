@@ -17,18 +17,19 @@ const PlanCreate = () => {
         let post_url = DB_URL + `plan-estudio`;
 
         // Actualizar cuerpo del post.
-        let response = await axios.post(post_url, {});
-        console.log(response);
-        setPlan_id(response.data.id);
-
-        asignatura.forEach(async (asig) => {
-            response = await axios.post(DB_URL + 'conformado', {
-                id_asignatura: asig,
+        await axios.post(DB_URL + `plan-estudio`, {}).then((info) => {
+            setPlan_id(info.data.id);
+        });
+            
+        asignaturas.forEach(async (asig) => {
+            console.log(asig);
+            console.log(parseInt(asig.id), plan_id);
+            await axios.post(DB_URL + 'conformado', {
+                id_asignatura: parseInt(asig.id),
                 uuid_plan: plan_id
             }).then((info) => {
-                console.log(`Asignatura ${asig} insertada con éxito.`)
-            });
-            
+                console.log(`Asignatura ${asig.id} insertada con éxito.`);
+            });            
         });
     }
 
@@ -49,8 +50,11 @@ const PlanCreate = () => {
 
     const selectAsignatura = (e) => {
         const id = e.target.value;
-        setAsignatura(asignatura.push(parseInt(id)));
-        setLabelAsignaturas(labelAsignaturas + `${id}, `)
+        if (!asignatura.includes(id)) {
+            setAsignatura([ ...id ]);
+        }
+        setLabelAsignaturas(labelAsignaturas + `${id}, `);
+        console.log(labelAsignaturas);
     };
 
     return (

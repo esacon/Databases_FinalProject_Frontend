@@ -3,7 +3,7 @@ import '../../css/nicepage/Docente-cursos.css';
 import '../../css/nicepage/nicepagedoccurso.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { DB_URL } from '../../../connection';
+import {DB_URL} from '../../connection';
 import useAuthContext from '../Login/auth/hooks/useAuthContext';
 
 const DocenteCursos = () => {
@@ -30,7 +30,7 @@ const DocenteCursos = () => {
 
   const getCursosDocente = async () => {
     try {
-      const response = await axios.get(DB_URL + `docente/${idDocente}/${periodo.id}`);
+      const response = await axios.get(DB_URL + `curso/doc/${periodo}/${idDocente}`);
       setCursosDocente(response.data);
     } catch (error) {
       console.log("Ha ocurrido un error");
@@ -74,7 +74,7 @@ const DocenteCursos = () => {
                   <option value={null} selected></option>
                     {
                       periodos.map((per) => (
-                        <option value={JSON.stringify(per)}>{per.id}</option>
+                        <option value={per.id}>{per.id}</option>
                       ))
                     }
                   </select>
@@ -96,10 +96,10 @@ const DocenteCursos = () => {
                     <div class="doccursou-container-style doccursou-layout-cell doccursou-opacity doccursou-opacity-85 doccursou-radius-50 doccursou-shape-round doccursou-size-20 doccursou-layout-cell-1">
                       <div class="doccursou-border-6 doccursou-border-grey-75 doccursou-container-layout doccursou-container-layout-1"><span class="doccursou-align-left doccursou-border-2 doccursou-border-black doccursou-icon doccursou-icon-circle doccursou-spacing-8 doccursou-text-palette-2-base doccursou-icon-1" data-href="https://nicepage.com"><svg class="doccursou-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 24 24" ><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#svg-04b0"></use></svg><svg class="doccursou-svg-content" viewBox="0 0 24 24" id="svg-04b0"><path d="M17.2501 2.00052C18.7689 2.00052 20.0001 3.23173 20.0001 4.75052V19.2488C20.0001 20.7675 18.7689 21.9988 17.2501 21.9988H6.75C5.23122 21.9988 4 20.7675 4 19.2488V4.75052C4 3.49158 4.84596 2.43023 6.00044 2.10391L5.99963 3.75071C5.69623 3.97877 5.5 4.34173 5.5 4.75052V19.2488C5.5 19.9391 6.05964 20.4988 6.75 20.4988H17.2501C17.9405 20.4988 18.5001 19.9391 18.5001 19.2488V4.75052C18.5001 4.06016 17.9405 3.50052 17.2501 3.50052L15 3.5V2L17.2501 2.00052ZM14.0001 2V10.1389C14.0001 10.886 13.2007 11.1665 12.7109 10.9033L12.6279 10.8512L10.5019 9.56575L8.42379 10.8172C7.92411 11.1779 7.09342 10.9564 7.00736 10.2594L7.0001 10.1389V2H14.0001ZM12.5001 3.5H8.5001V9.02327L10.0734 8.07421C10.3377 7.93602 10.6574 7.93341 10.8906 8.05036L12.5001 9.02396V3.5Z" fill="currentColor"></path></svg></span>
                         <h3 class="doccursou-align-left doccursou-text doccursou-text-2">{cursoi.id_asignatura}</h3>
-                        <h5 class="doccursou-align-left doccursou-text doccursou-text-3">{cursoi.id}</h5>
-                        <h5 class="doccursou-align-left doccursou-text doccursou-text-4">{cursoi.dia} - {cursoi.horario}<br />{cursoi.duracion} horas
+                        <h5 class="doccursou-align-left doccursou-text doccursou-text-3">NRC: {cursoi.id}</h5>
+                        <h5 class="doccursou-align-left doccursou-text doccursou-text-4">{cursoi.dia} - {cursoi.horario}<br />{cursoi.duracion} Horas
                         </h5>
-                        <p class="doccursou-align-left doccursou-text doccursou-text-5">Salon: {}</p>
+                        <p class="doccursou-align-left doccursou-text doccursou-text-5">Salon: {cursoi.id_salon}</p>
                       </div>
                     </div>
                   })

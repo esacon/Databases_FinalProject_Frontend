@@ -39,7 +39,7 @@ const AsignaturaUpdate = () => {
         }
     }
 
-    const [departamentos, setDepartamento] = useState();
+    const [departamento, setDepartamento] = useState();
 
     const selectDepartamento = (e) => {
         const departamento = e.target.value;

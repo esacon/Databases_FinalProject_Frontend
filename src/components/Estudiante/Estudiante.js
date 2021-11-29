@@ -37,7 +37,7 @@ const Estudiante = () => {
                   </g></svg></span>
                   <h5 class="estudiuu-text estudiuu-text-palette-2-base estudiuu-text-2">Revisar cursos</h5>
                   <p class="estudiuu-text estudiuu-text-grey-40 estudiuu-text-3">Revise los cursos que tiene o tenía asignados.</p>
-                  <a href={rutas.EST_CUR} data-page-id="825420159" class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-1">Ingresar<br />
+                  <a href={rutas.EST_CRS} data-page-id="825420159" class="estudiuu-align-center estudiuu-border-2 estudiuu-border-palette-2-base estudiuu-btn estudiuu-btn-round estudiuu-button-style estudiuu-hover-palette-2-base estudiuu-none estudiuu-radius-6 estudiuu-text-body-color estudiuu-text-hover-white estudiuu-btn-1">Ingresar<br />
                   </a>
                 </div>
               </div>

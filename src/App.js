@@ -64,7 +64,6 @@ function App() {
           <PublicRoute exact path={rutas.LOGIN} component={Login} />
           <PublicRoute exact path={rutas.PENDIENTE} component={Pendiente} />
           <PublicRoute exact path={rutas.UNAUTHORIZED} component={Unauthorized} />
-          <PublicRoute path="*" component={() => "404 NOT FOUND"} />
 
           <ProtectedRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />
           <ProtectedRoute exact path={rutas.EST_ING} component={EstudianteIngreso} />
@@ -119,7 +118,9 @@ function App() {
 
           <ProtectedRoute exact path={rutas.ADM_SAL} component={SalonCreate} />
           <ProtectedRoute exact path={rutas.ADM_SAL_L} component={SalonLista} />
-          <ProtectedRoute exact path={rutas.ADM_SAL_U} component={SalonUpdate} />          
+          <ProtectedRoute exact path={rutas.ADM_SAL_U} component={SalonUpdate} />   
+          
+          <PublicRoute path="*" component={() => "404 NOT FOUND"} />       
         </Switch>
       </Router>
     </div>
