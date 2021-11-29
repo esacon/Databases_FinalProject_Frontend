@@ -9,7 +9,7 @@ export const rutas = {
     DOC_CLSP: "/docente/clase",
     ESTUDIANTE: "/estudiante",
     EST_ING: "/estudiante/ingreso",
-    EST_CUR: "/estudiante/curso",
+    EST_CUR: "/estudiante/cursos",
     EST_ENT: "/estudiante/entrando",
     EST_MAT: "/estudiante/matricula",
     ADMIN: "/admin",

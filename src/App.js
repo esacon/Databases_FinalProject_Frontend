@@ -7,6 +7,7 @@ import ProtectedRoute from './components/Login/routes/ProtectedRoute';
 import Login from './components/Login/Login';
 import Admin from './components/Admin/Admin';
 import Estudiante from './components/Estudiante/Estudiante';
+import cursoE from './components/Estudiante/cursos';
 
 import Pendiente from './components/views/Pendiente';
 import Unauthorized from './components/views/Unauthorized';
@@ -34,6 +35,7 @@ import Docente from './components/Docente/Docente';
 import docenteCursos from './components/Docente/docente-cursos';
 import docenteCursosINI from './components/Docente/iniciando';
 import claseP from './components/Docente/asignaturaP';
+import ingreso from './components/Estudiante/entrando';
 import './css/estilos.css'
 
 
@@ -57,6 +59,7 @@ function App() {
           <ProtectedRoute exact path={rutas.ADM_EST} component={EstudianteCreate} />
           <ProtectedRoute exact path={rutas.ADM_EST_L} component={ListaEstudiantes} />
 
+<<<<<<< HEAD
           <ProtectedRoute exact path={rutas.ADM_MAT} component={MatriculaCreate} />
           <ProtectedRoute exact path={rutas.ADM_PER} component={PeriodoCreate} />
           <ProtectedRoute exact path={rutas.ADM_PLN} component={PlanCreate} />
@@ -69,6 +72,23 @@ function App() {
           <ProtectedRoute exact path={rutas.DOC_CRS} component={docenteCursos} />
           <ProtectedRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />
           <ProtectedRoute exact path={rutas.DOC_CLSP} component={claseP} />
+=======
+          <PublicRoute exact path={rutas.ADM_MAT} component={MatriculaCreate} />/* */
+          <PublicRoute exact path={rutas.ADM_PER} component={PeriodoCreate} />/* */
+          <PublicRoute exact path={rutas.ADM_PLN} component={PlanCreate} />/* */
+          <PublicRoute exact path={rutas.ADM_PRG} component={ProgramaCreate} />/* */
+          <PublicRoute exact path={rutas.ADM_SAL} component={SalonCreate} />/* */
+          <PublicRoute exact path={rutas.ESTUDIANTE} component={Estudiante} />/* */
+          <PublicRoute exact path={rutas.EST_CUR} component={cursoE} />/* */
+          <PublicRoute exact path={rutas.EST_ING} component={ingreso} />/* */
+
+
+          <PublicRoute exact path={rutas.DOCENTE} component={Docente} />/* */
+          <PublicRoute exact path={rutas.DOC_CRS} component={docenteCursos} />/* */
+          <PublicRoute exact path={rutas.DOC_INI} component={docenteCursosINI} />/* */
+          <PublicRoute exact path={rutas.DOC_CLSP} component={claseP} />
+          
+>>>>>>> e17a0a108d5666414b416f16bc6f6001203a3393
 
 
           <PublicRoute exact path={rutas.PENDIENTE} component={Pendiente} />
