@@ -26,6 +26,7 @@ export default function AuthContextProvider({children}) {
     const loginEstudiante = useCallback(() => {
         const client = new OAuth2Client(CLIENT_ID);
         const token = cookie.load('token');
+        const correo = cookie.load('correo');
 
         const verify = async (token) => {
             try {
@@ -62,6 +63,7 @@ export default function AuthContextProvider({children}) {
     const loginDocente = useCallback(() => {
         const client = new OAuth2Client(CLIENT_ID);
         const token = cookie.load('token');
+        const correo = cookie.load('correo');
 
         const verify = async (token) => {
             try {
@@ -73,7 +75,7 @@ export default function AuthContextProvider({children}) {
                 const userid = payload['sub'];
                 console.log('UserID: ', userid);
 
-                const res = await axios.get(DB_URL + '');
+                const res = await axios.get(DB_URL + `/docente/${correo}`);
                 const id = res.data[0];
 
                 setIsDocenteAuthenticated(true);

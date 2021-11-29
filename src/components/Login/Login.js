@@ -34,7 +34,7 @@ const Login = () => {
                     })
                 });
 
-                window.localStorage.setItem('USER_CORREO', response.profileObj.email);
+                cookie.save('correo', response.profileObj.email);
 
                 const content = await user.json();
                 console.log(content);
