@@ -21,6 +21,7 @@ const EstudianteCreate = () => {
         axios.post(post_url, {
             nombre: data.get('nombre'),
             uuid_plan: data.get('uuid_plan'),
+            correo: data.get('correo')
         }).then(() => {
             alert("Datos insertados exitosamente.");            
         })
@@ -59,7 +60,8 @@ const EstudianteCreate = () => {
                     }
                 </select>
             <div class="center">
-            <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+            <input name="correo" type="email" required="true"/>
+            <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
             </div>
             
         </form>

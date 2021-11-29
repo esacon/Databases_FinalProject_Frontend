@@ -53,7 +53,7 @@ const MatriculaCreate = () => {
         <>
         <div class="containerMatricula center">
         <span><img src={Icon} alt=""/></span><h3 class="mb35">Creando Matricula</h3>
-        <form class="formularioMatricula"action="">
+        <form class="formularioMatricula" action="">
             <label for="id_periodo">Seleccione periodo</label>                
             <select class="form-select" name="id_periodo" id="" onChange={selectPeriodo}>
                 {                        
@@ -78,7 +78,7 @@ const MatriculaCreate = () => {
             <input type="checkbox" id="asignatura3" name="asignatura3" value="asignatura"/>
             <label for="asignatura1">asignatura3</label><br/>
             <div class="center">
-                <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+                <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
             </div>
             
         </form>

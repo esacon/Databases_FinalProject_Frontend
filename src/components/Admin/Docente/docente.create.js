@@ -20,7 +20,8 @@ const ProfeCreate = () => {
         // Actualizar cuerpo del post.
         axios.post(post_url, {
             nombre: data.get('nombre'),
-            codigo_dpto: data.get('codigo_dpto')
+            codigo_dpto: data.get('codigo_dpto'),
+            correo: data.get('correo')
         }).then(() => {
             alert("Datos insertados exitosamente.");            
         })
@@ -48,7 +49,7 @@ const ProfeCreate = () => {
     return (
         <>
         <div class="containerProfesor center">
-            <span><img src={teacherIcon}/></span><h3 class="mb35">Creando Profesor</h3>
+            <span><img src={teacherIcon} alt=""/></span><h3 class="mb35">Creando Profesor</h3>
             <form class="formularioProfesor" onSubmit={handleSubmit}>
                 <label for="nombre">Nombre</label>
                 <input type="text" name='nombre'/>
@@ -60,8 +61,9 @@ const ProfeCreate = () => {
                         ))                    
                     }
                 </select>
+                <input name="correo" type="email" required="true"/>
                 <div class="center">
-                    <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+                    <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
                 </div>
                 
             </form>

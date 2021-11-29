@@ -7,62 +7,58 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { rutas } from '../../../path';
 
-const ListaEstudiantes = () => {
+const ListaPlan = () => {
 
-    const [estudiantes, setEstudiantes] = useState([]);
+    const [planes, setPlanes] = useState([]);
 
     // Funciones que se ejecutan al cargar la página.
     useEffect(() => {
-        getEstudiantes(); // Obtener estudiantes de la db.
+        getPlanes(); // Obtener planes de la db.
     }, []);    
 
     const history = useHistory(); // Historial del navegador.
 
     // Obtener dptos de la db.
-    const getEstudiantes = async () => {
+    const getPlanes = async () => {
         try {
-            const response = await axios.get(DB_URL + 'estudiante');
+            const response = await axios.get(DB_URL + 'plan-estudio');
             console.log(response.data);
-            setEstudiantes(response.data);
+            setPlanes(response.data);
         } catch (error) {
             console.log("Ha ocurrido un error");
         }
     }
 
-    const deleteEstudiante = (id) => {
-        let url = DB_URL + `estudiante/${id}`;
+    const deletePlan = (id) => {
+        let url = DB_URL + `plan/${id}`;
         
         axios.delete(url, {
             id: id,
         }).then(() => {
-            setEstudiantes(estudiantes.filter(estudiante => estudiante.id !== id));
-            alert("Estudiante eliminado exitosamente.");            
+            setPlanes(planes.filter(plan => plan.codigo !== id));
+            alert("Plan eliminado exitosamente.");            
         })
     }
 
     return (
         <div class="col-sm-10 offset-sm-1 p-4 rounded">                
-                <h2 class="mg-l text-left mb-2">Estudiantes:</h2> 
+                <h2 class="mg-l text-left mb-2">Planes:</h2> 
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
                     <th scope="col">Identificación</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Id plan de estudio</th>
+                    <th scope="col">Creditos</th>
+                    <th scope="col">Descripcion</th>
                     <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     { 
-                        estudiantes.forEach((estudiante) => (                                
+                        planes.map((plan) => (                                
                             <tr>
-                                <td>{estudiante.id}</td>
-                                <td>{estudiante.nombre}</td>
-                                <td>{estudiante.uuid_plan}</td>
+                                <td>{plan.id}</td>
                                 <td>
-                                    <button className="btn btn-warning btn-form " data-bs-toggle="modal" data-bs-target="#editarProducto" onClick={() => { history.push(rutas.ADM_EST_U) }}><FontAwesomeIcon icon={faEdit} /></button>
-                                    {"   "}
-                                    <button className="btn btn-danger" onClick={() => { deleteEstudiante(estudiante.codigo) }}><FontAwesomeIcon icon={faTrashAlt} /></button>
+                                    <button className="btn btn-danger" onClick={() => { deletePlan(plan.id) }}><FontAwesomeIcon icon={faTrashAlt} /></button>
                                 </td>
                             </tr>
                         )) 
@@ -73,4 +69,4 @@ const ListaEstudiantes = () => {
     );
 }
 
-export default ListaEstudiantes;
+export default ListaPlan;

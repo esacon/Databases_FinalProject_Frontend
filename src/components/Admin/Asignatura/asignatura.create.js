@@ -3,7 +3,7 @@ import axios from 'axios';
 import { DB_URL } from '../../../connection';
 import Icon from '../../../images/courses.png'
 
-const ListaAsignaturas = () => {
+const AsignaturaCreate = () => {
 
     // Funciones que se ejecutan al cargar la página.
     useEffect(() => {
@@ -65,7 +65,7 @@ const ListaAsignaturas = () => {
             <label for="creditos">Numero de créditos</label>
             <input type="number" name= 'creditos'/>
             <div class="center">
-                <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+                <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
             </div>
         </form>
         
@@ -74,4 +74,4 @@ const ListaAsignaturas = () => {
     );
 }
 
-export default ListaAsignaturas;
+export default AsignaturaCreate;

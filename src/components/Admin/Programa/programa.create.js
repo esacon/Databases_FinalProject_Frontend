@@ -89,7 +89,7 @@ const ProgramaCreate = () => {
                     }
                 </select>
             <div class="center">
-            <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+            <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
             </div>
             
         </form>

@@ -1,0 +1,268 @@
+ .dociniinfosection-1 {
+  background-image: url("https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 50% 50%;
+}
+
+.dociniinfosection-1 .dociniinfosheet-1 {
+  min-height: 803px;
+}
+
+.dociniinfosection-1 .dociniinfogroup-1 {
+  background-image: none;
+  margin-top: 149px;
+  margin-bottom: 60px;
+  min-height: 564px;
+}
+
+.dociniinfosection-1 .dociniinfocontainer-layout-1 {
+  padding: 30px 45px 35px;
+}
+
+.dociniinfosection-1 .dociniinfoshape-1 {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 0 123px;
+}
+
+.dociniinfosection-1 .dociniinfoshape-2 {
+  width: 58px;
+  height: 58px;
+  margin: -58px 123px 0 auto;
+}
+
+.dociniinfosection-1 .dociniinfotext-1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  width: 440px;
+  margin: -13px auto 0;
+}
+
+.dociniinfosection-1 .dociniinfogroup-2 {
+  width: 202px;
+  min-height: 221px;
+  margin: 43px auto 0 181px;
+}
+
+.dociniinfosection-1 .dociniinfoimage-1 {
+  height: auto;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dociniinfosection-1 .dociniinfotext-2 {
+  text-align: center;
+  margin: 0;
+}
+
+.dociniinfosection-1 .dociniinfogroup-3 {
+  width: 202px;
+  min-height: 221px;
+  margin: -223px 181px 0 auto;
+}
+
+.dociniinfosection-1 .dociniinfoimage-2 {
+  height: auto;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dociniinfosection-1 .dociniinfotext-3 {
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .dociniinfosection-1 .dociniinfosheet-1 {
+    min-height: 662px;
+  }
+
+  .dociniinfosection-1 .dociniinfocontainer-layout-1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .dociniinfosection-1 .dociniinfoimage-1 {
+    height: NaNpx;
+  }
+
+  .dociniinfosection-1 .dociniinfoimage-2 {
+    height: NaNpx;
+  }
+}
+
+@media (max-width: 991px) {
+  .dociniinfosection-1 .dociniinfosheet-1 {
+    min-height: 843px;
+  }
+
+  .dociniinfosection-1 .dociniinfogroup-1 {
+    margin-bottom: 37px;
+    min-height: 657px;
+  }
+
+  .dociniinfosection-1 .dociniinfocontainer-layout-1 {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .dociniinfosection-1 .dociniinfotext-1 {
+    font-size: 3.4375rem;
+    width: auto;
+    margin-top: 21px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dociniinfosection-1 .dociniinfogroup-2 {
+    min-height: 223px;
+    margin-top: 21px;
+    margin-left: auto;
+  }
+
+  .dociniinfosection-1 .dociniinfogroup-3 {
+    min-height: 223px;
+    margin-top: 28px;
+    margin-right: auto;
+  }
+
+  .dociniinfosection-1 .dociniinfoimage-2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+   .dociniinfosection-1 {
+    background-position: 45% 39.89%;
+  }
+
+  .dociniinfosection-1 .dociniinfosheet-1 {
+    min-height: 623px;
+  }
+
+  .dociniinfosection-1 .dociniinfocontainer-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dociniinfosection-1 .dociniinfotext-1 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .dociniinfosection-1 .dociniinfoimage-2 {
+    height: NaNpx;
+  }
+}
+
+@media (max-width: 575px) {
+   .dociniinfosection-1 {
+    background-position: 61.4% 39.89%;
+  }
+
+  .dociniinfosection-1 .dociniinfosheet-1 {
+    min-height: 567px;
+  }
+
+  .dociniinfosection-1 .dociniinfocontainer-layout-1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .dociniinfosection-1 .dociniinfoshape-1 {
+    margin-top: -388px;
+    margin-left: 9px;
+  }
+
+  .dociniinfosection-1 .dociniinfoshape-2 {
+    margin-top: -113px;
+  }
+
+  .dociniinfosection-1 .dociniinfotext-1 {
+    font-size: 2.25rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}.dociniinfosection-2 .dociniinfosheet-1 {
+  min-height: 205px;
+}
+
+.dociniinfosection-2 .dociniinfotext-1 {
+  margin: 51px 0;
+}.dociniinfosection-3 .dociniinfosheet-1 {
+  min-height: 552px;
+}
+
+.dociniinfosection-3 .dociniinfotext-1 {
+  font-weight: 700;
+  margin: 26px 0 0;
+}
+
+.dociniinfosection-3 .dociniinfolist-1 {
+  margin-bottom: 60px;
+  margin-top: 52px;
+}
+
+.dociniinfosection-3 .dociniinforepeater-1 {
+  grid-gap: 10px 10px;
+  grid-template-columns: 100%;
+  min-height: 312px;
+}
+
+.dociniinfosection-3 .dociniinfocontainer-layout-1 {
+  padding: 8px 10px;
+}
+
+.dociniinfosection-3 .dociniinfoicon-1 {
+  width: 64px;
+  height: 64px;
+  margin: 7px auto 0 34px;
+}
+
+.dociniinfosection-3 .dociniinfotext-2 {
+  margin: -48px auto 0 150px;
+}
+
+.dociniinfosection-3 .dociniinfocontainer-layout-2 {
+  padding: 8px 10px;
+}
+
+.dociniinfosection-3 .dociniinfoicon-2 {
+  width: 64px;
+  height: 64px;
+  margin: 7px auto 0 34px;
+}
+
+.dociniinfosection-3 .dociniinfotext-3 {
+  margin: -48px auto 0 150px;
+}
+
+.dociniinfosection-3 .dociniinfocontainer-layout-3 {
+  padding: 8px 10px;
+}
+
+.dociniinfosection-3 .dociniinfoicon-3 {
+  width: 64px;
+  height: 64px;
+  margin: 7px auto 0 34px;
+}
+
+.dociniinfosection-3 .dociniinfotext-4 {
+  margin: -48px auto 0 150px;
+}
+
+@media (max-width: 575px) {
+  .dociniinfosection-3 .dociniinfotext-2 {
+    margin-left: 92px;
+  }
+
+  .dociniinfosection-3 .dociniinfotext-3 {
+    margin-left: 92px;
+  }
+
+  .dociniinfosection-3 .dociniinfotext-4 {
+    margin-left: 92px;
+  }
+}

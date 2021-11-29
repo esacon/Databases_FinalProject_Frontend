@@ -1,0 +1,298 @@
+ .estclaseinfo-section-1 {
+  background-image: url("https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: 50% 50%;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-sheet-1 {
+  min-height: 540px;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-group-1 {
+  min-height: 403px;
+  background-image: none;
+  width: 1053px;
+  margin: 47px auto 60px;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-container-layout-1 {
+  padding: 30px 45px;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-icon-1 {
+  width: 96px;
+  height: 96px;
+  background-image: none;
+  color: rgb(255, 255, 255) !important;
+  margin: 17px auto 0;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-text-1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 47px 0 0;
+}
+
+.estclaseinfo-section-1 .estclaseinfo-text-2 {
+  margin: 30px 0 0;
+}
+
+@media (max-width: 1199px) {
+  .estclaseinfo-section-1 .estclaseinfo-sheet-1 {
+    min-height: 445px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-group-1 {
+    width: 940px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-container-layout-1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-text-1 {
+    width: 440px;
+  }
+}
+
+@media (max-width: 991px) {
+  .estclaseinfo-section-1 .estclaseinfo-sheet-1 {
+    min-height: 623px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-group-1 {
+    width: 720px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-text-1 {
+    font-size: 3.4375rem;
+  }
+}
+
+@media (max-width: 767px) {
+   .estclaseinfo-section-1 {
+    background-position: 45% 39.89%;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-group-1 {
+    width: 540px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-icon-1 {
+    margin-top: 139px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-text-1 {
+    margin-top: -2px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+   .estclaseinfo-section-1 {
+    background-position: 61.4% 39.89%;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-sheet-1 {
+    min-height: 567px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-group-1 {
+    width: 340px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-icon-1 {
+    margin-top: 75px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-text-1 {
+    font-size: 2.25rem;
+    width: 320px;
+    margin-top: -6px;
+    margin-right: 0;
+    margin-left: 9px;
+  }
+
+  .estclaseinfo-section-1 .estclaseinfo-text-2 {
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+}.estclaseinfo-section-2 .estclaseinfo-sheet-1 {
+  min-height: 50vw;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-1 {
+  font-weight: normal;
+  margin: 32px 0 0;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-list-1 {
+  margin-bottom: 60px;
+  margin-top: 32px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-repeater-1 {
+  min-height: 375px;
+  grid-template-columns: 100%;
+  grid-gap: 10px 10px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-container-layout-1 {
+  padding: 10px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-icon-1 {
+  width: 64px;
+  height: 64px;
+  margin: 17px auto 0 6px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-2 {
+  margin: -50px 412px 0 70px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-3 {
+  margin: -36px 0 0 708px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-container-layout-2 {
+  padding: 10px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-icon-2 {
+  width: 64px;
+  height: 64px;
+  margin: 17px auto 0 6px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-4 {
+  margin: -50px 412px 0 70px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-5 {
+  margin: -36px 0 0 708px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-container-layout-3 {
+  padding: 10px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-icon-3 {
+  width: 64px;
+  height: 64px;
+  margin: 17px auto 0 6px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-6 {
+  margin: -50px 412px 0 70px;
+}
+
+.estclaseinfo-section-2 .estclaseinfo-text-7 {
+  margin: -36px 0 0 708px;
+}
+
+@media (max-width: 1199px) {
+  .estclaseinfo-section-2 .estclaseinfo-text-2 {
+    margin-right: 282px;
+    margin-left: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-3 {
+    margin-left: 508px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-4 {
+    margin-right: 282px;
+    margin-left: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-5 {
+    margin-left: 508px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-6 {
+    margin-right: 282px;
+    margin-left: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-7 {
+    margin-left: 508px;
+  }
+}
+
+@media (max-width: 991px) {
+  .estclaseinfo-section-2 .estclaseinfo-text-2 {
+    margin-right: 62px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-3 {
+    margin-left: 288px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-4 {
+    margin-right: 62px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-5 {
+    margin-left: 288px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-6 {
+    margin-right: 62px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-7 {
+    margin-left: 288px;
+  }
+}
+
+@media (max-width: 767px) {
+  .estclaseinfo-section-2 .estclaseinfo-text-2 {
+    margin-right: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-3 {
+    margin-left: 108px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-4 {
+    margin-right: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-5 {
+    margin-left: 108px;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-6 {
+    margin-right: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-7 {
+    margin-left: 108px;
+  }
+}
+
+@media (max-width: 575px) {
+  .estclaseinfo-section-2 .estclaseinfo-text-3 {
+    margin-left: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-5 {
+    margin-left: 0;
+  }
+
+  .estclaseinfo-section-2 .estclaseinfo-text-7 {
+    margin-left: 0;
+  }
+}

@@ -4,6 +4,7 @@ import axios from 'axios';
 import { DB_URL } from '../../../connection';
 
 const SalonCreate = () => {
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.target);
@@ -18,6 +19,7 @@ const SalonCreate = () => {
             alert("Datos insertados exitosamente.");            
         })
     }
+
     return (
         <>
         <div class="containerSalon center">
@@ -26,7 +28,7 @@ const SalonCreate = () => {
             <label for="id">Indique lugar</label>
             <input type="text" name="id"/>
             <div class="center">
-                <button class="btn btn-success justify-self-between mt-3 mb-3">Enviar</button>
+                <button class="btn btn-success justify-self-between mt-3 mb-3">Registrar</button>
             </div>
         </form>
         
