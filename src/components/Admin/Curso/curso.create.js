@@ -23,6 +23,7 @@ const CursoCreate = () => {
         // Actualizar cuerpo del post.
         axios.post(post_url, {
             uuid_docente: data.get('uuid_docente'),
+            codigo_dpto: data.get('codigo_dpto'),
             id_asignatura: data.get('id_asignatura'),
             id_salon: data.get('id_salon'),
             id_periodo: data.get('id_periodo'),

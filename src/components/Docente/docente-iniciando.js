@@ -53,7 +53,7 @@ const DocenteIniciando = () => {
     }
     const period = (d.getFullYear() * 100 + sec).toString();
     const URL = DB_URL + `docente/iniciando/${period}/${curso}`;
-    alert(URL)
+    alert('Iniciando los cursos...')
     await axios.put(URL);
   }
   
